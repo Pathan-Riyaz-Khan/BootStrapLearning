@@ -71,6 +71,12 @@
                     </h2>
                     <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <a href="#pricing" class="btn btn-lg  btn-outline-primary">Buy now</a>
+                    <!--offcanvas  / open sidebar-->
+                    <a href="#sidebar" class=" d-block mt-3" 
+                    data-bs-toggle="offcanvas"
+                    role="button" aria-controls="sidebar">
+                    Explore my other books
+                  </a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                   <!--tooltips-->
@@ -368,6 +374,36 @@
           <button type="button" class="btn btn-outline-success">Submit</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!--Offcanvas-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">
+        My Other Books
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+      aria-label="close"></button>
+    </div>
+    
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatibus labore laborum consequuntur cumque exercitationem perferendis aliquam nemo 
+        ad ipsa adipisci, praesentium soluta, minus nobis minima! Magni 
+        exercitationem excepturi fugiat perferendis?</p>
+
+        <!--dropdown-->
+        <div class="dropdown mt-3">
+           <button class="btn btn-secondary dropdown-toggle" id="book-dropdown" data-bs-toggle="dropdown"
+           type="button">Choose a book title</button>
+
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li><a href="#" class="dropdown-item">Master Vue js</a></li>
+            <li><a href="#" class="dropdown-item">Master Node js</a></li>
+            <li><a href="#" class="dropdown-item">Master angular js</a></li>
+          </ul>
+        </div>
     </div>
   </div>
 
